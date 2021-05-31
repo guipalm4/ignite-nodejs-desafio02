@@ -56,7 +56,11 @@ function checksTodoExists(request, response, next) {
   const todo = user.todos.find(t => t.id === id);
 
   if(!todo) {
+<<<<<<< HEAD
     return response.status(404).json({ error: "Todo not found" });;
+=======
+    return response.status(404);
+>>>>>>> f6696fa14f667382d104c02e563a8e7c0a0f4c09
   }
     
   request.todo = todo;
